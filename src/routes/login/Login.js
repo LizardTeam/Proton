@@ -11,6 +11,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Login.css';
+import App from './microsoftLogin';
 
 class Login extends React.Component {
   static propTypes = {
@@ -39,6 +40,7 @@ class Login extends React.Component {
               <span>Log in with Facebook</span>
             </a>
           </div>
+          <App/>
           <div className={s.formGroup}>
             <a className={s.google} href="/login/google">
               <svg

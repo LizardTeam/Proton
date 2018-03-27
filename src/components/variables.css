@@ -29,3 +29,12 @@
   --screen-md-min: 992px;  /* Medium screen / desktop */
   --screen-lg-min: 1200px; /* Large screen / wide desktop */
 }
+body {
+  font-family: 'Roboto', sans-serif
+}
+.heading {
+  font-weight: 7;
+}
+.subheading {
+  font-weight: 3;
+}
