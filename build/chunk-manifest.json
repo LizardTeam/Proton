@@ -5,43 +5,36 @@
   ],
   "home": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/about~admin~contact~home~login~not-found~privacy~register.0046cdac14f992770310.hot-update.js",
     "/assets/home.chunk.js"
   ],
   "contact": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/about~admin~contact~home~login~not-found~privacy~register.0046cdac14f992770310.hot-update.js",
-    "/assets/contact.chunk.js"
+    "/assets/contact.chunk.js",
+    "/assets/contact.b56e54b079eb44ac3b93.hot-update.js"
   ],
   "login": [
     "/assets/vendors~login.chunk.js",
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/about~admin~contact~home~login~not-found~privacy~register.0046cdac14f992770310.hot-update.js",
     "/assets/login.chunk.js"
   ],
   "register": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/about~admin~contact~home~login~not-found~privacy~register.0046cdac14f992770310.hot-update.js",
     "/assets/register.chunk.js"
   ],
   "about": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/about~admin~contact~home~login~not-found~privacy~register.0046cdac14f992770310.hot-update.js",
     "/assets/about.chunk.js"
   ],
   "privacy": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/about~admin~contact~home~login~not-found~privacy~register.0046cdac14f992770310.hot-update.js",
     "/assets/privacy.chunk.js"
   ],
   "admin": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/about~admin~contact~home~login~not-found~privacy~register.0046cdac14f992770310.hot-update.js",
     "/assets/admin.chunk.js"
   ],
   "not-found": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/about~admin~contact~home~login~not-found~privacy~register.0046cdac14f992770310.hot-update.js",
     "/assets/not-found.chunk.js"
   ]
 }
