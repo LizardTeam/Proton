@@ -14,7 +14,7 @@ import about from './about.md';
 
 function action() {
   return {
-    chunks: ['store'],
+    chunks: ['about'],
     title: about.title,
     component: (
       <Layout>
