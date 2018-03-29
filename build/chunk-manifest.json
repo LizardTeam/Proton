@@ -9,13 +9,13 @@
   ],
   "contact": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/contact.chunk.js",
-    "/assets/contact.b56e54b079eb44ac3b93.hot-update.js"
+    "/assets/contact.chunk.js"
   ],
   "login": [
     "/assets/vendors~login.chunk.js",
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/login.chunk.js"
+    "/assets/login.chunk.js",
+    "/assets/login.c6c469d8b41a4727f370.hot-update.js"
   ],
   "register": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",

@@ -8,23 +8,18 @@
  */
 
 import React from 'react';
-import Home from './Home';
+import afterlogin from './afterLogin';
 import Layout from '../../components/Layout';
 
-async function action({ fetch }) {
-  const resp = await fetch('/graphql', {
-    body: JSON.stringify({
-      query: '{news{title,link,content}}',
-    }),
-  });
-  const { data } = await resp.json();
-  if (!data || !data.news) throw new Error('Failed to load the news feed.');
+  const title = 'LoggedIn'
+
+  function action() {
   return {
     title: 'Proton',
     chunks: ['afterlogin'],
     component: (
       <Layout>
-        <Home news={data.news} />
+        <afterLogin title={title}/>
       </Layout>
     ),
   };
