@@ -11,17 +11,13 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import Login from './Login';
 
-const title = 'Log In';
+const title = 'Log in';
 
 function action() {
   return {
     chunks: ['login'],
     title,
-    component: (
-      <Layout>
-        <Login title={title} />
-      </Layout>
-    ),
+    component: <Login title={title} />,
   };
 }
 

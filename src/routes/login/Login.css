@@ -9,27 +9,36 @@
 @import '../../components/variables.css';
 
 .root {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding:0;
 }
 
 .container {
   margin: 0 auto;
-  padding: 0 0 40px;
-  max-width: 380px;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
 }
 
 .lead {
   font-size: 1.25em;
 }
 
+.wrapper {
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 .formGroup {
-  margin-bottom: 15px;
+   margin-bottom: 15px;
 }
 
 .label {
   display: block;
-  font-weight: 700;
+  font-weight: 300;
+  color: #343a40;
+  margin-bottom: 0.5em;
 }
 
 .input {
@@ -39,21 +48,27 @@
   padding: 10px 16px;
   width: 100%;
   height: 46px;
-  outline: 0;
-  border: 1px solid #ccc;
-  border-radius: 0;
-  background: #fff;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  color: #616161;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25em;
   font-size: 18px;
   line-height: 1.3333333;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  font: 400 13.3333px Arial;
+
 }
 
 .input:focus {
-  border-color: #0074c2;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 116, 194, 0.6);
+  color: #495057;
+  background-color: #fff;
+  border-color: #9acffa;
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(33,150,243,0.25);
+  box-shadow: 0 0 0 0.2rem rgba(33,150,243,0.25);
 }
+
 
 .button {
   display: block;
@@ -92,6 +107,17 @@
   background: #2d4373;
 }
 
+.microsoft {
+  font-weight: 3;
+  border:1px solid #ffb900;
+  background: #ffb900;
+  composes: button;
+}
+
+.microsoft:hover {
+  background: #e5a800;
+}
+
 .google {
   border-color: #dd4b39;
   background: #dd4b39;
@@ -114,7 +140,7 @@
 
 .icon {
   display: inline-block;
-  margin: -2px 12px -2px 0;
+  margin: 5px;
   width: 20px;
   height: 20px;
   vertical-align: middle;
@@ -153,4 +179,45 @@
   width: 100%;
   border-bottom: 1px solid #ddd;
   content: '';
+}
+
+.loginBlock {
+  padding: 60px 40px;
+  min-width: 300px;
+  margin-left: auto;
+}
+
+.promo {
+  width: 100%;
+  background-image: url('./bg.jpg');
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.promoText {
+  color:white;
+  font-weight: 400;
+  font-size: 3.3em;
+  text-align: center;
+  margin:0 auto;
+  margin-top:10%;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+  border: 3px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.logo svg {
+  margin: 50%;
+  transform: translate(-50%,-50%);
 }
