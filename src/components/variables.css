@@ -29,12 +29,24 @@
   --screen-md-min: 992px;  /* Medium screen / desktop */
   --screen-lg-min: 1200px; /* Large screen / wide desktop */
 }
+
 body {
-  font-family: 'Roboto', sans-serif
+  font-family: Roboto,-apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,Arial,sans-serif;
+  line-height: 1.5;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
 }
+
 .heading {
   font-weight: 7;
 }
+
 .subheading {
   font-weight: 3;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 3;
+
 }
