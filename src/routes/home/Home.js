@@ -26,6 +26,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className={s.root}>
+        <iframe width="0%" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/91750827&color=%236c3210&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
         <div className={s.container}>
           <h1>React.js News</h1>
           {this.props.news.map(item => (
@@ -38,6 +39,7 @@ class Home extends React.Component {
                 // eslint-disable-next-line react/no-danger
                 dangerouslySetInnerHTML={{ __html: item.content }}
               />
+
             </article>
           ))}
         </div>
