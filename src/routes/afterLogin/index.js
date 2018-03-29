@@ -21,7 +21,7 @@ async function action({ fetch }) {
   if (!data || !data.news) throw new Error('Failed to load the news feed.');
   return {
     title: 'Proton',
-    chunks: ['home'],
+    chunks: ['afterlogin'],
     component: (
       <Layout>
         <Home news={data.news} />

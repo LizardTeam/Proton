@@ -1,5 +1,8 @@
 {
-  "client": ["/assets/vendors.chunk.js", "/assets/client.js"],
+  "client": [
+    "/assets/vendors.chunk.js",
+    "/assets/client.js"
+  ],
   "home": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
     "/assets/home.chunk.js"
@@ -19,7 +22,8 @@
   ],
   "about": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/about.chunk.js"
+    "/assets/about.chunk.js",
+    "/assets/about.d92762bb77012b694cae.hot-update.js"
   ],
   "privacy": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
