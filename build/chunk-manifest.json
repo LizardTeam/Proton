@@ -5,8 +5,7 @@
   ],
   "home": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/home.chunk.js",
-    "/assets/home.369b2090dada86bc86e1.hot-update.js"
+    "/assets/home.chunk.js"
   ],
   "contact": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
@@ -15,7 +14,8 @@
   "login": [
     "/assets/vendors~login.chunk.js",
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",
-    "/assets/login.chunk.js"
+    "/assets/login.chunk.js",
+    "/assets/login.0f99146e2570195810d9.hot-update.js"
   ],
   "register": [
     "/assets/about~admin~contact~home~login~not-found~privacy~register.chunk.js",

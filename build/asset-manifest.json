@@ -11,6 +11,7 @@
   "register.js": "/assets/register.chunk.js",
   "src/components/Header/logo-small.png": "/assets/src/components/Header/logo-small.png?2f751285",
   "src/components/Header/logo-small@2x.png": "/assets/src/components/Header/logo-small@2x.png?8844262b",
+  "src/routes/login/bg.jpg": "/assets/src/routes/login/bg.jpg?b74643cb",
   "vendors.js": "/assets/vendors.chunk.js",
   "vendors~login.js": "/assets/vendors~login.chunk.js"
 }
