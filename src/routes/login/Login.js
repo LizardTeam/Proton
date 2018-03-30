@@ -25,10 +25,10 @@ class Login extends React.Component {
         <div className={s.container}>
           <div className={s.promo}>
             <p className={s.promoText}>
-              Welcome to [NAME]!
+              Welcome to <b>Proton</b>!
             </p>
             <div className={s.logo}>
-<svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" x="0px" y="0px" viewBox="0 0 27.793 27.793" width="90px" height="90px">
+<svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" x="0px" y="0px" viewBox="0 0 27.793 27.793" width="150px" height="150px">
 <g>
   <g id="c1_ray">
     <polygon points="20.972,0 5.076,15.803 10.972,15.803 6.44,27.793 22.716,11.989 16.819,11.989   "
