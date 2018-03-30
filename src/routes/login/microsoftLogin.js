@@ -9,6 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <ReactLoginMS
+
           clientId="d3df4603-8e0b-4a6f-bfe2-06257845210f" // required: 'application id/client id' obtained from https://apps.dev.microsoft.com for your app
           redirectUri="http://localhost:3000/about" // required: redirectUri registered in https://apps.dev.microsoft.com for your app
           scopes={['user.read']} // optional: defaults to "user.read" full list is present https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference
