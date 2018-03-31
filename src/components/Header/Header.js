@@ -31,10 +31,6 @@ class Header extends React.Component {
             />
             <span className={s.brandTxt}>Proton</span>
           </Link>
-          <div className={s.banner}>
-            <h1 className={s.bannerTitle}>Proton</h1>
-            <p className={s.bannerDesc}>Complex web app</p>
-          </div>
         </div>
       </div>
     );
@@ -42,3 +38,11 @@ class Header extends React.Component {
 }
 
 export default withStyles(s)(Header);
+
+/*
+**Banner
+          <div className={s.banner}>
+            <h1 className={s.bannerTitle}>Proton</h1>
+            <p className={s.bannerDesc}>Complex web app</p>
+          </div>
+*/

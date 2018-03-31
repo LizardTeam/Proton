@@ -10,10 +10,17 @@
 import React from 'react';
 import ErrorPage from './ErrorPage';
 
+const title = 'Error Page';
+
 function action() {
   return {
-    title: 'Demo Error',
-    component: <ErrorPage />,
+
+    title,
+    component: (
+
+        <ErrorPage title={title} />
+
+    ),
   };
 }
 

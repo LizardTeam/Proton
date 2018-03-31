@@ -12,6 +12,7 @@ import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './NotFound.css';
 
+
 class NotFound extends React.Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
@@ -19,13 +20,12 @@ class NotFound extends React.Component {
 
   render() {
     return (
-      <div className={s.root}>
-        <div className={s.container}>
-          <h1>{this.props.title}</h1>
-          <p>Sorry, the page you were trying to view does not exist.</p>
-          <iframe width="0%" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/59337117&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-        </div>
-      </div>
+          <div>
+            <h1 className = {s.title}>404</h1>
+            <h3 className= {s.subheading}>Oops Page Not Found</h3>
+            <p className = {s.text} >The page you are looking for doesnot exist or has been moved.</p>
+          </div>
+
     );
   }
 }
