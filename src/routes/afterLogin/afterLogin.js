@@ -12,7 +12,7 @@ import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './afterlogin.css';
 
-class afterLogin extends React.Component {
+class AfterLogin extends React.Component {
 static propTypes = {
   title: PropTypes.string.isRequired,
 };
@@ -26,4 +26,4 @@ static propTypes = {
   }
 }
 
-export default withStyles(s)(afterLogin);
+export default withStyles(s)(AfterLogin);

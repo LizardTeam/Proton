@@ -26,10 +26,18 @@ import config from './config';
 
 //const MongoClient = require('mongodb').MongoClient;
 
-//const MONGO_URL = 'mongodb://MapInc:q565602qw@ds227939.mlab.com:27939/proton';
+const MONGO_URL = 'mongodb://MapInc:q565602qw@ds227939.mlab.com:27939/proton';
+
+var mongoose = require('mongoose');
+mongoose.connect(MONGO_URL);
+
+const Cat = mongoose.model('Cat', { name: String });
+
+const kitty = new Cat({ name: 'Zildjian' });
+kitty.save().then(() => console.log('meow'));
 
 
-
+console.log("Fuck this fucking MERN");
 process.on('unhandledRejection', (reason, p) => {
   console.error('Unhandled Rejection at:', p, 'reason:', reason);
   // send entire app down. Process manager will restart it
@@ -59,36 +67,9 @@ app.use(cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
-
-// MongoDB
-//------------------------------------------------------------------------------
-/*
-
-MongoClient.connect(MONGO_URL, (err, db) => {
-  if (err) {
-    return console.log(err);
-  }
-console.log("mLab database connected");
-  // Do something with db here, like inserting a record
-  db.collection('Users').insertOne(
-    {
-      title: 'Hello MongoDB',
-      text: 'Hopefully this works!'
-    },
-    function (err, res) {
-      if (err) {
-        db.close();
-        return console.log(err);
-      }
-      // Success
-      db.close();
-    }
-  )
+app.get('/after', function (req, res) {
+  res.send('You were fucked up! - 404')
 });
-
-
-*/
 
 
 //
@@ -124,7 +105,7 @@ app.get(
 app.get(
   '/login/facebook/return',
   passport.authenticate('facebook', {
-    failureRedirect: '/login',
+    failureRedirect: '/loginF',
     session: false,
   }),
   (req, res) => {

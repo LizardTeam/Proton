@@ -8,7 +8,7 @@
  */
 
 import React from 'react';
-import afterlogin from './afterLogin';
+import Afterlogin from './afterLogin';
 import Layout from '../../components/Layout';
 
   const title = 'LoggedIn'
@@ -16,10 +16,10 @@ import Layout from '../../components/Layout';
   function action() {
   return {
     title: 'Proton',
-    chunks: ['afterlogin'],
+    chunks: [],
     component: (
       <Layout>
-        <afterLogin title={title}/>
+        <AfterLogin title={title}/>
       </Layout>
     ),
   };
