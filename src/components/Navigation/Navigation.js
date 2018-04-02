@@ -11,6 +11,7 @@ import React from 'react';
 import cx from 'classnames';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Navigation.css';
+import UserAccount from './UserAccount.js';
 import Link from '../Link';
 
 class Navigation extends React.Component {
@@ -69,7 +70,7 @@ class Navigation extends React.Component {
               </svg>
               <span className={s.linkText}>Cart</span>
             </Link>
-            <Link className={s.link} to= "/">
+            <Link className={cx(s.link,s.account)} to= "/">
               <svg
                 id="Capa_1"
                 className = {s.icon}
@@ -98,6 +99,8 @@ class Navigation extends React.Component {
                 </g>
               </svg>
             <span className={s.linkText}>Hi, [NAME]</span>
+            <UserAccount/>
+
             </Link>
       </div>
     );

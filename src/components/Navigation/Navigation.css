@@ -20,7 +20,6 @@
   font-size: 1.125em;/* ~18px */
   font-size: 13.92px;
   font-weight: 400;
-
 }
 
 .link,
@@ -34,7 +33,7 @@ color: #313435;
  color: #72777a;
 }
 
-.link:hover svg path{
+.link:hover > svg path{
  fill: #72777a;
 }
 
@@ -60,4 +59,45 @@ color: #313435;
 
 .spacer {
   color: rgba(255, 255, 255, 0.3);
+}
+.account {
+  position: relative;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 17px);
+    right: 0px;
+    z-index: 1000;
+    float: left;
+    min-width: 120px;
+    padding: 8px 0;
+    padding: .5rem 0;
+    margin: 2px 0 0;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid  rgba(0,0,0,.0625);
+    border-top:0;
+    border-radius: 0 0 5px 5px ;
+    transition: transform .15s ease-out,-webkit-transform .15s ease-out;
+}
+
+.dropdown .link {
+  display: block;
+  line-height: 1.5;
+  padding: 5px 15px;
+
+}
+
+.dropdown .link:last-child {
+  position: relative;
+  top:5px;
+  padding-top:10px;
+  border-top: 1px solid  rgba(0,0,0,.0625);
 }
