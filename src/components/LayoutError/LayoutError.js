@@ -37,7 +37,7 @@ class LayoutError extends React.Component {
                 {this.props.children}
                 <div>
                   <a href="javascript:history.go(-1)" className={s.button}>
-                    Go to Home
+                    Back
                   </a>
                 </div>
               </div>
