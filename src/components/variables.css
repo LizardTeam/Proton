@@ -67,9 +67,9 @@ h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 10px 16px;
   padding: .375rem .75rem;
-  border: 1px solid #373277;
+  border: 1px solid #7FC2E5;
   border-radius: .25rem;
-  background: #373277;
+  background: #7FC2E5;
   color: #fff;
   text-align: center;
   text-decoration: none;
@@ -81,12 +81,15 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .button:hover {
-  background: rgba(54, 50, 119, 0.8);
+  opacity: 0.8;
 }
 
 .button:focus {
   border-color: #0074c2;
-  box-shadow: 0 0 8px rgba(0, 116, 194, 0.6);
 }
 
 
+.link {
+  text-decoration: none;
+  color: #313435;
+}

@@ -16,6 +16,7 @@
 .root {
   background-color: #fff;
   color: #000000;
+  position: relative;
 }
 
 .container {

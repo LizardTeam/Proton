@@ -13,6 +13,7 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Navigation.css';
 import UserAccount from './UserAccount.js';
 import Link from '../Link';
+import Cart from '../Cart';
 
 class Navigation extends React.Component {
 
@@ -86,6 +87,10 @@ class Navigation extends React.Component {
                 </g>
               </svg>
               <span className={s.linkText}>Cart</span>
+              {
+                this.state.visible &&
+                <Cart/>
+              }
             </Link>
             <Link className={cx(s.link,s.account)} onClick={this.handleClick} to= "/">
               <svg
@@ -121,8 +126,11 @@ class Navigation extends React.Component {
               <UserAccount/>
             }
 
+
             </Link>
+            <Cart/>
       </div>
+
     );
   }
 }

@@ -1,0 +1,160 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+@import '../variables.css';
+
+:root {
+  --brand-color: #7FC2E5;
+}
+
+.root {
+  background-color: #fff;
+  color: #000000;
+  font-weight: 500;
+  color: #313435;
+
+}
+
+.container h2 {
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: 1px solid rgba(0,0,0,.0625);
+  border-radius: 10px;
+  display: block;
+  min-height: 65px;
+  width: 60%;
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 2000;
+  background: #fff;
+  top:50%;
+  left: 50%;
+
+
+  transform: translate(-50%,-50%);
+/*
+  position: fixed;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  width: calc(100% - 280px);
+   z-index: 800;*/
+}
+
+.attributes {
+  display: block;
+}
+
+.close {
+  position: absolute;
+  border:0;
+  top:30px;
+  width:30px;
+  height:30px;
+  right:30px;
+  background: url("./close.svg") no-repeat;
+}
+
+.remove {
+
+  border:0;
+
+  width:25px;
+  height:20px;
+
+  background: url("./remove.svg") no-repeat;
+}
+
+.close:hover, .remove:hover {
+  opacity: 0.3;
+}
+
+.cartList {
+  margin: 0;
+  padding: 0;
+}
+.cartItem {
+      margin: 0;
+      list-style: none;
+      border-top: 1px solid rgba(0,0,0,.0625);
+      border-bottom: 1px solid rgba(0,0,0,.0625);
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      padding: 6px 15px;
+}
+
+.quantity {
+  padding: 6px 0;
+  width: 80px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.quantity input {
+  border : 0;
+  width: 20px;
+  text-align: center;
+}
+.quantity button {
+  text-align: center;
+  padding: 0;
+  border:0;
+  font-weight: 600;
+  color:#fff;
+
+
+  width: 20px;
+  height: 20px;
+}
+
+.name {
+  width:45%;
+  font-size: 13.92px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+
+}
+
+.price {
+
+}
+
+.remove {
+
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  padding: 5px 15px;
+
+}
+
+.total .sum {
+  margin-right: auto;
+}
+.total .button {
+  margin-left: 15px;
+  width: 100px;
+}
+
+.close {
+
+}

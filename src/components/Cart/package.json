@@ -1,6 +1,6 @@
 {
-  "name": "Sign",
+  "name": "Cart",
   "version": "0.0.0",
   "private": true,
-  "main": "./Sign.js"
+  "main": "./Cart.js"
 }

@@ -30,11 +30,11 @@ color: #313435;
 }
 
 .link:hover {
- color: #72777a;
+ color: #7FC2E5;
 }
 
 .link:hover > svg path{
- fill: #72777a;
+ fill: #7FC2E5;
 }
 
 .linkText {
