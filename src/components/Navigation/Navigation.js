@@ -15,6 +15,23 @@ import UserAccount from './UserAccount.js';
 import Link from '../Link';
 
 class Navigation extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      visible: false
+    };
+
+    // This binding is necessary to make `this` work in the callback
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.setState(
+      {visible: !this.state.visible}
+      )
+  }
+
   render() {
     return (
       <div className={s.root} role="navigation">
@@ -38,7 +55,7 @@ class Navigation extends React.Component {
           </svg>
           <span className={s.linkText}>Service</span>
           </Link>
-          <Link className={s.link} to= "/">
+          <Link className={s.link}  to= "/">
               <svg
               className= {s.icon}
               version="1.1"
@@ -70,7 +87,7 @@ class Navigation extends React.Component {
               </svg>
               <span className={s.linkText}>Cart</span>
             </Link>
-            <Link className={cx(s.link,s.account)} to= "/">
+            <Link className={cx(s.link,s.account)} onClick={this.handleClick} to= "/">
               <svg
                 id="Capa_1"
                 className = {s.icon}
@@ -99,7 +116,10 @@ class Navigation extends React.Component {
                 </g>
               </svg>
             <span className={s.linkText}>Hi, [NAME]</span>
-            <UserAccount/>
+            {
+              this.state.visible &&
+              <UserAccount/>
+            }
 
             </Link>
       </div>
@@ -108,3 +128,4 @@ class Navigation extends React.Component {
 }
 
 export default withStyles(s)(Navigation);
+
