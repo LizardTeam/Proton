@@ -25,7 +25,7 @@ import chunks from './chunk-manifest.json'; // eslint-disable-line import/no-unr
 import config from './config';
 
 //const MongoClient = require('mongodb').MongoClient;
-
+// shh it is too secret ))
 const MONGO_URL = 'mongodb://MapInc:q565602qw@ds227939.mlab.com:27939/proton';
 
 var mongoose = require('mongoose');
