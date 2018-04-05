@@ -95,6 +95,13 @@ app.use((err, req, res, next) => {
 
 app.use(passport.initialize());
 
+app.post('/login', (req, res, next) => {
+  res.send('logged in via local login');
+},
+(req, res, next)=> {
+  console.log('Time: ', Date.now());
+})
+
 app.get(
   '/login/facebook',
   passport.authenticate('facebook', {
