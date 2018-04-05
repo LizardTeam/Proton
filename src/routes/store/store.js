@@ -17,6 +17,37 @@ class Store extends React.Component {
     title: PropTypes.string.isRequired,
   };
 
+  /*
+componentDidMount() {
+  return fetch("http://10.4.5.114/localservice/webservice/rest/server.php", {
+    method: 'POST',
+    headers: new Headers({
+               'Content-Type': 'application/x-www-form-urlencoded', // <-- Specifying the Content-Type
+      }),
+    body: "param1=value1&param2=value2" // <-- Post parameters
+  })
+  .then((response) => response.text())
+  .then((responseText) => {
+    alert(responseText);
+  })
+  .catch((error) => {
+      console.error(error);
+  });
+
+}
+  --------------------------------------------------------------------------------
+
+  getPostagePrice = () => {
+    fetch('/path/to/server')
+    .then(response => response.text())
+    .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+    .then(data => console.log(data));
+  }
+
+  */
+
+
+
   render() {
     return (
       <div className={s.root}>
