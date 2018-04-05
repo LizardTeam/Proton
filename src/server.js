@@ -95,11 +95,12 @@ app.use((err, req, res, next) => {
 
 app.use(passport.initialize());
 
-app.post('/login', (req, res, next) => {
-  res.send('logged in via local login');
-},
-(req, res, next)=> {
+app.post('/login', function (req, res, next) {
   console.log('Time: ', Date.now());
+  next()
+},
+function(req, res) {
+  res.send('logged in via local login: ' + Date.now());
 })
 
 app.get(
