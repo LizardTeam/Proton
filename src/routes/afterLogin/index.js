@@ -8,7 +8,7 @@
  */
 
 import React from 'react';
-import Afterlogin from './afterLogin';
+import AfterLogin from './afterLogin';
 import Layout from '../../components/Layout';
 
   const title = 'LoggedIn'
