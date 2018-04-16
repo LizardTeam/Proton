@@ -12,6 +12,8 @@ import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './ErrorPage.css';
 
+import LayoutError from '../../components/LayoutError';
+
 class ErrorPage extends React.Component {
   static propTypes = {
     error: PropTypes.shape({
@@ -29,16 +31,22 @@ class ErrorPage extends React.Component {
     if (__DEV__ && this.props.error) {
       return (
         <div>
-          <h1>{this.props.error.name}</h1>
-          <pre>{this.props.error.stack}</pre>
+          <LayoutError>
+            <h1 className = {s.title}>Error</h1>
+            <h3 className= {s.subheading}>{this.props.error.name}</h3>
+            <pre className = {s.text}>{this.props.error.stack}</pre>
+          </LayoutError>
         </div>
       );
     }
 
     return (
       <div>
-        <h1>Error</h1>
-        <p>Sorry, a critical error occurred on this page.</p>
+        <LayoutError>
+            <h1 className = {s.title}>500</h1>
+            <h3 className= {s.subheading}>Internal Server Error</h3>
+            <p className = {s.text} >Something goes wrong with our servers, please try again later.</p>
+        </LayoutError>
       </div>
     );
   }

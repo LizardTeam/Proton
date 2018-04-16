@@ -6,7 +6,9 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
-
+* {
+    box-sizing: border-box;
+}
 :root {
   /*
    * Typography
@@ -36,6 +38,7 @@ body {
   font-size: 14px;
   padding: 0;
   margin: 0;
+
 }
 
 .heading {
@@ -43,10 +46,50 @@ body {
 }
 
 .subheading {
-  font-weight: 3;
+  font-weight: 400;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  margin: 0;
+  color: #313435;
+}
+.text {
+  margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6{
   font-weight: 3;
 
+}
+
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 16px;
+  padding: .375rem .75rem;
+  border: 1px solid #7FC2E5;
+  border-radius: .25rem;
+  background: #7FC2E5;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5;
+
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:focus {
+  border-color: #0074c2;
+}
+
+
+.link {
+  text-decoration: none;
+  color: #313435;
 }
