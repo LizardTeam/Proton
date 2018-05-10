@@ -30,6 +30,8 @@
   --screen-sm-min: 768px;  /* Small screen / tablet */
   --screen-md-min: 992px;  /* Medium screen / desktop */
   --screen-lg-min: 1200px; /* Large screen / wide desktop */
+  --brand-color: #7FC2E5;
+  --silver-color:#AFAFAF; /*Empty cart bg*/
 }
 
 body {

@@ -17,6 +17,7 @@
   background-color: #fff;
   color: #000000;
   position: relative;
+  min-width: var(--screen-sm-min);
 }
 
 .container {
@@ -26,13 +27,6 @@
   display: block;
   min-height: 65px;
   margin-bottom: 0;
-  /*
-  position: fixed;
-  -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
-  width: calc(100% - 280px);
-   z-index: 800;*/
 }
 
 .brand {
@@ -40,6 +34,7 @@
   font-weight: 500;
   color: #313435;
   font-size: 20px;
+  display: inline-block;
 }
 
 .brandTxt {

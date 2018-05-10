@@ -1,17 +1,4 @@
-/**
- * React Starter Kit (https://www.reactstarterkit.com/)
- *
- * Copyright © 2014-present Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 @import '../variables.css';
-
-:root {
-  --brand-color: #7FC2E5;
-}
 
 .root {
   background-color: #fff;
@@ -27,12 +14,12 @@
 }
 
 .container {
-  margin: 0 auto;
   padding: 10px 20px;
   border: 1px solid rgba(0,0,0,.0625);
   border-radius: 10px;
   display: block;
   min-height: 65px;
+  min-width: var(--screen-sm-min);
   width: 60%;
   margin-bottom: 0;
   position: fixed;
@@ -43,13 +30,6 @@
 
 
   transform: translate(-50%,-50%);
-/*
-  position: fixed;
-  -webkit-transition: all .2s ease;
-  -o-transition: all .2s ease;
-  transition: all .2s ease;
-  width: calc(100% - 280px);
-   z-index: 800;*/
 }
 
 .attributes {
@@ -67,7 +47,6 @@
 }
 
 .remove {
-
   border:0;
 
   width:25px;
@@ -84,16 +63,40 @@
   margin: 0;
   padding: 0;
 }
+
+
+
 .cartItem {
-      margin: 0;
-      list-style: none;
+  margin: 0;
+  list-style: none;
       border-top: 1px solid rgba(0,0,0,.0625);
       border-bottom: 1px solid rgba(0,0,0,.0625);
       display: flex;
       justify-content: space-between;
       align-content: center;
       align-items: center;
-      padding: 6px 15px;
+      padding: 20px;
+}
+
+.cartEmpty {
+  display: none;
+  justify-content: center;
+  text-transform: uppercase;
+  color:var(--silver-color);
+  background: url("./empty.png") no-repeat;
+  height: 250px;
+      background-position: 100px 0;
+}
+
+.cartItem:first-child{
+  display: flex;
+}
+
+.cartEmpty b {
+  font-weight: 500;
+      margin-top: 20px;
+    margin-left: 200px;
+  font-size: 1.6em;
 }
 
 .quantity {
@@ -110,6 +113,7 @@
   width: 20px;
   text-align: center;
 }
+
 .quantity button {
   text-align: center;
   padding: 0;
@@ -117,26 +121,17 @@
   font-weight: 600;
   color:#fff;
 
-
   width: 20px;
   height: 20px;
 }
 
 .name {
   width:45%;
+  text-align: right;
   font-size: 13.92px;
   display: flex;
   justify-content: space-between;
   align-items:center;
-
-}
-
-.price {
-
-}
-
-.remove {
-
 }
 
 .total {
@@ -144,17 +139,16 @@
   align-items: center;
   min-height: 80px;
   padding: 5px 15px;
-
 }
 
 .total .sum {
   margin-right: auto;
 }
+
 .total .button {
-  margin-left: 15px;
   width: 100px;
 }
 
-.close {
-
+.price {
+  width: 50px;
 }
