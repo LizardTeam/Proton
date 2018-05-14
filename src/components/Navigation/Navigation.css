@@ -9,36 +9,41 @@
 
 .root {
   float: right;
+
   margin: 6px 0 0;
+
   color: #000;
 }
 
 .link {
-  display: inline-block;
-  padding: 3px 8px;
-  text-decoration: none;
   font-size: 1.125em;/* ~18px */
   font-size: 13.92px;
   font-weight: 400;
+
+  display: inline-block;
+
+  padding: 3px 8px;
+
+  text-decoration: none;
 }
 
 .link,
 .link:active,
 .link:visited {
-color: #313435;
-
+  color: #313435;
 }
 
 .link:hover {
- color: #7FC2E5;
+  color: #7fc2e5;
 }
 
-.link:hover > svg path{
- fill: #7FC2E5;
+.link:hover > svg path {
+  fill: #7fc2e5;
 }
 
 .linkText {
   display: inline-block;
+
   vertical-align: middle;
 }
 
@@ -48,17 +53,18 @@ color: #313435;
 .highlight {
   margin-right: 8px;
   margin-left: 8px;
-  border-radius: 3px;
-  background: rgba(0, 0, 0, 0.15);
+
   color: #000;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, .15);
 }
 
 .highlight:hover {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, .3);
 }
 
 .spacer {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, .3);
 }
 .account {
   position: relative;
@@ -69,35 +75,42 @@ color: #313435;
 }
 
 .dropdown {
-    position: absolute;
-    top: calc(100% + 17px);
-    right: 0px;
-    z-index: 1000;
-    float: left;
-    min-width: 120px;
-    padding: 8px 0;
-    padding: .5rem 0;
-    margin: 2px 0 0;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid  rgba(0,0,0,.0625);
-    border-top:0;
-    border-radius: 0 0 5px 5px ;
-    transition: transform .15s ease-out,-webkit-transform .15s ease-out;
+  position: absolute;
+  z-index: 1000;
+  top: calc(100% + 17px);
+  right: 0;
+
+  float: left;
+
+  min-width: 120px;
+  margin: 2px 0 0;
+  padding: 8px 0;
+  padding: .5rem 0;
+
+  transition: transform .15s ease-out,-webkit-transform .15s ease-out;
+  text-align: left;
+
+  color: #212529;
+  border: 1px solid  rgba(0,0,0,.0625);
+  border-top: 0;
+  border-radius: 0 0 5px 5px ;
+  background-color: #fff;
+  background-clip: padding-box;
 }
 
 .dropdown .link {
-  display: block;
   line-height: 1.5;
-  padding: 5px 15px;
 
+  display: block;
+
+  padding: 5px 15px;
 }
 
 .dropdown .link:last-child {
   position: relative;
-  top:5px;
-  padding-top:10px;
+  top: 5px;
+
+  padding-top: 10px;
+
   border-top: 1px solid  rgba(0,0,0,.0625);
 }

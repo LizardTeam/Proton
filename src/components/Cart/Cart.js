@@ -28,6 +28,7 @@ class Cart extends React.Component {
 
              <CartItem
                 key = {678686}
+                id = {678686}
                 name= {'Fantastic view in a superlocation'}
                 quantity={1}
                 price= {67}
@@ -36,6 +37,7 @@ class Cart extends React.Component {
 
               <CartItem
                 key = {678687}
+                id = {678687}
                 name= {'Beautiful, best located apartment!'}
                 quantity={5}
                 price= {900}

@@ -1,0 +1,126 @@
+@import '../../variables.css';
+
+
+.cartItem {
+  display: flex;
+
+  margin: 0;
+  padding: 20px;
+
+  list-style: none;
+
+  border-top: 1px solid rgba(0,0,0,.0625);
+
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.cartItem:first-child {
+  display: flex;
+}
+
+.name {
+  font-size: 13.92px;
+
+  display: flex;
+
+  width: 45%;
+
+  text-align: right;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.quantity {
+  display: flex;
+
+  width: 80px;
+  padding: 6px 0;
+
+  border-radius: 10px;
+
+  justify-content: space-between;
+}
+
+.quantity input {
+  width: 20px;
+
+  text-align: center;
+
+  border: 0;
+}
+
+.quantity button {
+  font-weight: 600;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  text-align: center;
+
+  color: #fff;
+  border: 0;
+}
+
+.checkbox {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+}
+
+.checkbox:hover {
+  color: #663d15;
+}
+
+
+.checkbox input[type='checkbox'] + .checkboxIndicator {
+  position: absolute;
+  top: -15px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid var(--brand-color);
+  border-radius: 50%;
+  background: none;
+}
+
+.checkbox input[type='checkbox'] {
+  display: none;
+}
+
+
+.checkbox input[type='checkbox']:checked + .checkboxIndicator {
+  background: url('./check.svg') no-repeat;
+  background-position: 5px, 5px;
+  background-size: 20px, 20px;
+}
+
+
+
+
+.price {
+  width: 50px;
+}
+
+
+
+.remove {
+  width: 24px;
+  height: 30px;
+
+  color: var(--brand-color);
+  border: 0;
+  background: url('./remove.svg') no-repeat;
+}

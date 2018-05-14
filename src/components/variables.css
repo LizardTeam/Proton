@@ -32,6 +32,8 @@
   --screen-lg-min: 1200px; /* Large screen / wide desktop */
   --brand-color: #7FC2E5;
   --silver-color:#AFAFAF; /*Empty cart bg*/
+  --dark-grey-text:#313435;
+  --main-bg-color:#fff;
 }
 
 body {

@@ -1,35 +1,37 @@
 @import '../variables.css';
 
 .root {
-  background-color: #fff;
-  color: #000000;
   font-weight: 500;
-  color: #313435;
 
+  color: var(--dark-grey-text);
+  background-color: var(--main-bg-color);
 }
 
 .container h2 {
   font-weight: 500;
+
   margin-left: 15px;
 }
 
 .container {
-  padding: 10px 20px;
-  border: 1px solid rgba(0,0,0,.0625);
-  border-radius: 10px;
-  display: block;
-  min-height: 65px;
-  min-width: var(--screen-sm-min);
-  width: 60%;
-  margin-bottom: 0;
   position: fixed;
   z-index: 2000;
-  background: #fff;
-  top:50%;
+  top: 50%;
   left: 50%;
 
+  display: block;
+
+  width: 60%;
+  min-width: var(--screen-sm-min);
+  min-height: 65px;
+  margin-bottom: 0;
+  padding: 10px 20px;
 
   transform: translate(-50%,-50%);
+
+  border: 1px solid var(--brand-color);
+  border-radius: 10px;
+  background: var(--main-bg-color);
 }
 
 .attributes {
@@ -38,107 +40,63 @@
 
 .close {
   position: absolute;
-  border:0;
-  top:30px;
-  width:30px;
-  height:30px;
-  right:30px;
-  background: url("./close.svg") no-repeat;
+  top: 30px;
+  right: 30px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 0;
+  background: url('./close.svg') no-repeat;
 }
 
-.remove {
-  border:0;
 
-  width:25px;
-  height:20px;
 
-  background: url("./remove.svg") no-repeat;
-}
-
-.close:hover, .remove:hover {
-  opacity: 0.3;
+.close:hover,
+.remove:hover {
+  opacity: .3;
 }
 
 .cartList {
   margin: 0;
   padding: 0;
+
+  border-bottom: 1px solid rgba(0,0,0,.0625);
 }
 
-
-
-.cartItem {
-  margin: 0;
-  list-style: none;
-      border-top: 1px solid rgba(0,0,0,.0625);
-      border-bottom: 1px solid rgba(0,0,0,.0625);
-      display: flex;
-      justify-content: space-between;
-      align-content: center;
-      align-items: center;
-      padding: 20px;
-}
 
 .cartEmpty {
   display: none;
-  justify-content: center;
-  text-transform: uppercase;
-  color:var(--silver-color);
-  background: url("./empty.png") no-repeat;
+
   height: 250px;
-      background-position: 100px 0;
+
+  text-transform: uppercase;
+
+  color: var(--silver-color);
+  background: url('./empty.png') no-repeat;
+  background-position: 100px 0;
+
+  justify-content: center;
 }
 
-.cartItem:first-child{
-  display: flex;
-}
+
 
 .cartEmpty b {
-  font-weight: 500;
-      margin-top: 20px;
-    margin-left: 200px;
   font-size: 1.6em;
+  font-weight: 500;
+
+  margin-top: 20px;
+  margin-left: 200px;
 }
 
-.quantity {
-  padding: 6px 0;
-  width: 80px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.quantity input {
-  border : 0;
-  width: 20px;
-  text-align: center;
-}
-
-.quantity button {
-  text-align: center;
-  padding: 0;
-  border:0;
-  font-weight: 600;
-  color:#fff;
-
-  width: 20px;
-  height: 20px;
-}
-
-.name {
-  width:45%;
-  text-align: right;
-  font-size: 13.92px;
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-}
 
 .total {
   display: flex;
-  align-items: center;
+
   min-height: 80px;
   padding: 5px 15px;
+
+  align-items: center;
 }
 
 .total .sum {
@@ -147,8 +105,4 @@
 
 .total .button {
   width: 100px;
-}
-
-.price {
-  width: 50px;
 }

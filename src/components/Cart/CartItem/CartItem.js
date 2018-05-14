@@ -4,15 +4,17 @@ import PropTypes from 'prop-types';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
 import normalizeCss from 'normalize.css';
-import s from './Cart.css';
 
-import Link from '../Link';
+import s from './CartItem.css';
+import Link from '../../Link';
 class CartItem extends React.Component {
 
 //Changes counter value
 
 // total price counter
 // https://stackoverflow.com/questions/45793118/calculating-quantity-and-price-total-in-react
+
+// Enter for checkbox
   constructor(props) {
     super(props);
     this.state = {
@@ -42,25 +44,29 @@ class CartItem extends React.Component {
         name,
         quantity,
         price,
-        image
+        image,
+        id
       } = this.props;
 
     return (
       <li className = {s.cartItem}>
-        <input type="checkbox"/>
+        <label  className={s.checkbox} tabIndex='0'>
+          <input type="checkbox" name="product" value={id}/>
+          <span className={s.checkboxIndicator}></span>
+        </label>
         <Link className={cx(s.name,s.link)}>
           <img src={image} width="160" height="90" alt="Testitem"/>
             {name}
         </Link>
         <div className={s.quantity}>
-          <button className={cx(s.plus,s.button)} onClick={this.plus} type="button" name="button">+</button>
-          <input type="text" name="name" value={this.state.count}/>
           <button className={cx(s.minus,s.button)} onClick={this.minus}  type="button" name="button">-</button>
+          <input type="text" name="name" value={this.state.count}/>
+          <button className={cx(s.plus,s.button)} onClick={this.plus} type="button" name="button">+</button>
         </div>
-          <span className={s.price}>
-            {price *this.state.count}$
-          </span>
-          <button className={s.remove}></button>
+        <span className={s.price}>
+          {price*this.state.count}$
+        </span>
+        <button className={s.remove}></button>
       </li>
     );
   }
