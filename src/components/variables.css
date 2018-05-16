@@ -71,10 +71,10 @@ h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 10px 16px;
   padding: .375rem .75rem;
-  border: 1px solid #7FC2E5;
+  border: 1px solid var(--brand-color);
   border-radius: .25rem;
-  background: #7FC2E5;
-  color: #fff;
+  background: var(--brand-color);
+  color: var(--main-bg-color);
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -95,5 +95,6 @@ h1,h2,h3,h4,h5,h6{
 
 .link {
   text-decoration: none;
-  color: #313435;
+  cursor: pointer;
+  /*color: var(--dark-grey-text);*/
 }

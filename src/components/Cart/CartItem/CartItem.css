@@ -8,6 +8,7 @@
   padding: 20px;
 
   list-style: none;
+  color:var(--dark-grey-text);
 
   border-top: 1px solid rgba(0,0,0,.0625);
 
@@ -28,6 +29,7 @@
   width: 45%;
 
   text-align: right;
+  color:var(--dark-grey-text);
 
   justify-content: space-between;
   align-items: center;

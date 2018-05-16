@@ -1,0 +1,6 @@
+{
+  "name": "NavigationUser",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./NavigationUser.js"
+}

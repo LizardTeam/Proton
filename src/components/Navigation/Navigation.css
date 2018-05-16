@@ -30,15 +30,17 @@
 .link,
 .link:active,
 .link:visited {
-  color: #313435;
+  color: var(--dark-grey-text);
 }
 
 .link:hover {
-  color: #7fc2e5;
+  color: var(--brand-color);
 }
 
-.link:hover > svg path {
-  fill: #7fc2e5;
+.link:hover > svg,
+.link:active > svg,
+.link:focus > svg {
+  fill: var(--brand-color);
 }
 
 .linkText {
@@ -77,7 +79,7 @@
 .dropdown {
   position: absolute;
   z-index: 1000;
-  top: calc(100% + 17px);
+  top: calc(100%);
   right: 0;
 
   float: left;
@@ -94,7 +96,7 @@
   border: 1px solid  rgba(0,0,0,.0625);
   border-top: 0;
   border-radius: 0 0 5px 5px ;
-  background-color: #fff;
+  background-color: var(--main-bg-color);
   background-clip: padding-box;
 }
 

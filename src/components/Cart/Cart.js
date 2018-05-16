@@ -5,7 +5,6 @@ import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
 import normalizeCss from 'normalize.css';
 import s from './Cart.css';
-import emptyImg from './empty.png';
 
 import CartItem from './CartItem';
 
@@ -17,11 +16,13 @@ cartItem: first - child => display flex => пустая корзина
 добавить сумматор
 */
 class Cart extends React.Component {
+
   render() {
     return (
       <div className={s.root}>
         <section className={s.container}>
-        <button className = {s.close}></button>
+
+        <button className = {s.close} onClick={this.props.close}></button>
         <h2> Shopping Bag </h2>
           <form>
             <ul className= {s.cartList}>
